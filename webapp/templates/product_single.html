@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Winkel - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'web1/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web1/css/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'web1/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web1/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web1/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'web1/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'web1/css/ionicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'web1/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'web1/css/jquery.timepicker.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'web1/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'web1/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'web1/css/style.css' %}">
+	  <link href="{% static 'web/css/bootstrap.min.css' %}" rel="stylesheet">
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	  <link href="{% static 'web/css/tiny-slider.css' %}" rel="stylesheet">
+	  <link href="{% static 'web/css/style.css' %}" rel="stylesheet">
+  </head>
+  <body>
+<!--		<div class="py-1 bg-black">-->
+<!--    	<div class="container">-->
+<!--    		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">-->
+<!--	    		<div class="col-lg-12 d-block">-->
+<!--		    		<div class="row d-flex">-->
+<!--		    			<div class="col-md pr-4 d-flex topper align-items-center">-->
+<!--					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>-->
+<!--						    <span class="text">+ 1235 2355 98</span>-->
+<!--					    </div>-->
+<!--					    <div class="col-md pr-4 d-flex topper align-items-center">-->
+<!--					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>-->
+<!--						    <span class="text">youremail@email.com</span>-->
+<!--					    </div>-->
+<!--					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">-->
+<!--						    <span class="text">3-5 Business days delivery &amp; Free Returns</span>-->
+<!--					    </div>-->
+<!--				    </div>-->
+<!--			    </div>-->
+<!--		    </div>-->
+<!--		  </div>-->
+<!--    </div>-->
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item ">
+							<a class="nav-link" href="{% url 'home' %}">Home</a>
+						</li>
+						<li class="active"><a class="nav-link" href="shop.html">Products</a></li>
+						<li><a class="nav-link" href="{% url 'about_page' %}">About us</a></li>
+						<li><a class="nav-link" href="services.html">Services</a></li>
+						<li><a class="nav-link" href="blog.html">Blog</a></li>
+						<li><a class="nav-link" href="{% url 'contact_page' %}">Contact us</a></li>
+					</ul>
+
+					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+						<li><a class="nav-link" href="#"><img src="{% static 'web/images/user.svg' %}"></a></li>
+						<li><a class="nav-link" href="cart.html"><img src="{% static 'web/images/cart.svg' %}"></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</nav>
+    <!-- END nav -->
+    <!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-5">
+							<div class="intro-excerpt">
+								<h1>Modern Interior <span clsas="d-block">Design Studio</span></h1>
+								<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+								<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="hero-img-wrap">
+								<img src="{% static 'web/images/couch.png' %}" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+
+
+    <div class="hero-wrap hero-bread" style="background-image: url('images/bg_6.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+<!--          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span class="mr-2"><a href="index.html">Product</a></span> <span>Product Single</span></p>-->
+            <h1 class="mb-0 bread">{{data.Productname}}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-6 mb-5 ftco-animate">
+    				<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{data.Productimage1.url}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{data.Productimage2.url}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{data.Productimage3.url}}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    			</div>
+    			<div class="col-lg-6 product-details pl-md-5 ftco-animate">
+    				<h3>{{data.Productname}}</h3>
+<!--    				<div class="rating d-flex">-->
+<!--							<p class="text-left mr-4">-->
+<!--								<a href="#" class="mr-2">5.0</a>-->
+<!--								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--							</p>-->
+<!--							<p class="text-left mr-4">-->
+<!--								<a href="#" class="mr-2" style="color: #000;">100 <span style="color: #bbb;">Rating</span></a>-->
+<!--							</p>-->
+<!--							<p class="text-left">-->
+<!--								<a href="#" class="mr-2" style="color: #000;">500 <span style="color: #bbb;">Sold</span></a>-->
+<!--							</p>-->
+<!--						</div>-->
+    				<p class="price"><span>₹ {{data.Mrp}}</span></p>
+    				<p>{{data.Description}}</p>
+
+						<div class="row mt-4">
+							<div class="col-md-6">
+								<div class="form-group d-flex">
+		              <div class="select-wrap">
+	                  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+	                  <select name="" id="" class="form-control">
+	                  	<option value="">Small</option>
+	                    <option value="">Medium</option>
+	                    <option value="">Large</option>
+	                    <option value="">Extra Large</option>
+	                  </select>
+	                </div>
+		            </div>
+							</div>
+							<div class="w-100"></div>
+							<div class="input-group col-md-6 d-flex mb-3">
+	             	<span class="input-group-btn mr-2">
+<!--	                	<button type="button" class="quantity-left-minus btn"  data-type="minus" data-field="">-->
+<!--	                   <i class="ion-ios-remove"></i>-->
+<!--	                	</button>-->
+	            		</span>
+
+<!--	             	<span class="input-group-btn ml-2">-->
+<!--	                	<button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">-->
+<!--	                     <i class="ion-ios-add"></i>-->
+<!--	                 </button>-->
+<!--	             	</span>-->
+	          	</div>
+	          	<div class="w-100"></div>
+	          	<div class="col-md-12">
+	          		<p style="color: #000;">Only {{data.Quantity}} piece available</p>
+	          	</div>
+							<h6 class="mb-0 bread">Country of origin: <b>{{data.Country}}</b></h6><br>
+							<h6 class="mb-0 bread">Manufactured by: <b>{{data.Manufactured}}</b></h6>
+          	</div><br><br>
+			<div>
+				<form method="post" action="{% url 'save_cart' %}">
+					{% csrf_token %}
+					<label>Select Quantity</label>
+					<input type="number" id="quantity" name="Quantity" class="form-control input-number" value="1" min="1" max="{{data.Quantity}}"  ><br>
+					<input type="hidden" placeholder="price" class="form-control" id="price" value="{{data.Mrp}}" name="Price" ><br>
+					<label>Total Amount</label>
+					<input type="text" placeholder="Total amount" class="form-control" id="total" name="Totalprice"><br>
+					<input type="hidden"  class="form-control" id="name" value="{{request.session.Name}}" name="Username" ><br>
+					<input type="hidden"  class="form-control" id="product" value="{{data.Productname}}" name="Productname" ><br>
+
+				    <button type="submit" class="btn ">Add to Cart</button>
+				</form>
+			</div>
+
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+<!--    <section class="ftco-section bg-light">-->
+<!--    	<div class="container">-->
+<!--				<div class="row justify-content-center mb-3 pb-3">-->
+<!--          <div class="col-md-12 heading-section text-center ftco-animate">-->
+<!--            <h2 class="mb-4">Ralated Products</h2>-->
+<!--            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    	</div>-->
+<!--    	<div class="container">-->
+<!--    		<div class="row">-->
+<!--    			<div class="col-sm col-md-6 col-lg ftco-animate">-->
+<!--    				<div class="product">-->
+<!--    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg" alt="Colorlib Template">-->
+<!--    						<span class="status">30%</span>-->
+<!--    						<div class="overlay"></div>-->
+<!--    					</a>-->
+<!--    					<div class="text py-3 px-3">-->
+<!--    						<h3><a href="#">Floral Jackquard Pullover</a></h3>-->
+<!--    						<div class="d-flex">-->
+<!--    							<div class="pricing">-->
+<!--		    						<p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>-->
+<!--		    					</div>-->
+<!--		    					<div class="rating">-->
+<!--	    							<p class="text-right">-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    							</p>-->
+<!--	    						</div>-->
+<!--	    					</div>-->
+<!--	    					<p class="bottom-area d-flex px-3">-->
+<!--    							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>-->
+<!--    							<a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>-->
+<!--    						</p>-->
+<!--    					</div>-->
+<!--    				</div>-->
+<!--    			</div>-->
+<!--    			<div class="col-sm col-md-6 col-lg ftco-animate">-->
+<!--    				<div class="product">-->
+<!--    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg" alt="Colorlib Template">-->
+<!--    						<div class="overlay"></div>-->
+<!--    					</a>-->
+<!--    					<div class="text py-3 px-3">-->
+<!--    						<h3><a href="#">Floral Jackquard Pullover</a></h3>-->
+<!--    						<div class="d-flex">-->
+<!--    							<div class="pricing">-->
+<!--		    						<p class="price"><span>$120.00</span></p>-->
+<!--		    					</div>-->
+<!--		    					<div class="rating">-->
+<!--	    							<p class="text-right">-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    							</p>-->
+<!--	    						</div>-->
+<!--	    					</div>-->
+<!--    						<p class="bottom-area d-flex px-3">-->
+<!--    							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>-->
+<!--    							<a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>-->
+<!--    						</p>-->
+<!--    					</div>-->
+<!--    				</div>-->
+<!--    			</div>-->
+<!--    			<div class="col-sm col-md-6 col-lg ftco-animate">-->
+<!--    				<div class="product">-->
+<!--    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="Colorlib Template">-->
+<!--	    					<div class="overlay"></div>-->
+<!--	    				</a>-->
+<!--    					<div class="text py-3 px-3">-->
+<!--    						<h3><a href="#">Floral Jackquard Pullover</a></h3>-->
+<!--    						<div class="d-flex">-->
+<!--    							<div class="pricing">-->
+<!--		    						<p class="price"><span>$120.00</span></p>-->
+<!--		    					</div>-->
+<!--		    					<div class="rating">-->
+<!--	    							<p class="text-right">-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    							</p>-->
+<!--	    						</div>-->
+<!--	    					</div>-->
+<!--    						<p class="bottom-area d-flex px-3">-->
+<!--    							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>-->
+<!--    							<a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>-->
+<!--    						</p>-->
+<!--    					</div>-->
+<!--    				</div>-->
+<!--    			</div>-->
+<!--    			<div class="col-sm col-md-6 col-lg ftco-animate">-->
+<!--    				<div class="product">-->
+<!--    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="Colorlib Template">-->
+<!--    						<div class="overlay"></div>-->
+<!--    					</a>-->
+<!--    					<div class="text py-3 px-3">-->
+<!--    						<h3><a href="#">Floral Jackquard Pullover</a></h3>-->
+<!--    						<div class="d-flex">-->
+<!--    							<div class="pricing">-->
+<!--		    						<p class="price"><span>$120.00</span></p>-->
+<!--		    					</div>-->
+<!--		    					<div class="rating">-->
+<!--	    							<p class="text-right">-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    								<a href="#"><span class="ion-ios-star-outline"></span></a>-->
+<!--	    							</p>-->
+<!--	    						</div>-->
+<!--	    					</div>-->
+<!--    						<p class="bottom-area d-flex px-3">-->
+<!--    							<a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>-->
+<!--    							<a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>-->
+<!--    						</p>-->
+<!--    					</div>-->
+<!--    				</div>-->
+<!--    			</div>-->
+<!--    		</div>-->
+<!--    	</div>-->
+<!--    </section>-->
+
+    <footer class="ftco-footer bg-light ftco-section">
+      <div class="container">
+      	<div class="row">
+      		<div class="mouse">
+						<a href="#" class="mouse-icon">
+							<div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+						</a>
+					</div>
+      	</div>
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Winkel</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Menu</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Shop</a></li>
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Journal</a></li>
+                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Help</h2>
+              <div class="d-flex">
+	              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+	                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
+	                <li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
+	                <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
+	                <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
+	              </ul>
+	              <ul class="list-unstyled">
+	                <li><a href="#" class="py-2 d-block">FAQs</a></li>
+	                <li><a href="#" class="py-2 d-block">Contact</a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static 'web1/js/jquery.min.js' %}"></script>
+  <script src="{% static 'web1/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'web1/js/popper.min.js' %}"></script>
+  <script src="{% static 'web1/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'web1/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'web1/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'web1/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'web1/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'web1/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'web1/js/aos.js' %}"></script>
+  <script src="{% static 'web1/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'web1/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'web1/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'web1/js/google-map.js' %}"></script>
+  <script src="{% static 'web1/js/main.js' %}"></script>
+
+  <script src="{% static 'web/js/bootstrap.bundle.min.js' %}">
+
+  </script><script src="{% static 'web/js/tiny-slider.js' %}"></script>
+  <script src="{% static 'web/js/custom.js' %}"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#quantity").change(function(){
+                x=document.getElementById("quantity").value;
+                y=document.getElementById("price").value;
+                result=x*y;
+                document.getElementById("total").value=result;
+            })
+        })
+    </script>
+
+  <script>
+
+  </script>
+
+  </body>
+</html>

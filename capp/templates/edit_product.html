@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{% url 'update_product' pro_id=pro.id %}" enctype="multipart/form-data" >
+    {% csrf_token %}
+  <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Edit Product Details</h4>
+<!--                  <p class="card-description">-->
+<!--                    Basic form elements-->
+<!--                  </p>-->
+                  <form class="forms-sample">
+                    <div class="form-group">
+                      <label>Category Name</label>
+                        <select class="form-control" name="Categoryname" >
+                          <option>{{pro.Categoryname}}</option>
+                          {% for i in cat %}
+                          <option>{{i.Categoryname}}</option>
+                          {% endfor %}
+<!--                          <option>Female</option>-->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                      <label>Product Name</label>
+                      <input type="text" class="form-control"  placeholder="Product Name" name="Productname" value="{{pro.Productname}}" >
+                    </div>
+                    <div class="form-group">
+                      <label>Quantity</label>
+                      <input type="number" class="form-control"  placeholder="Item Quantity" name="Quantity" value="{{pro.Quantity}}">
+                    </div>
+                    <div class="form-group">
+                      <label>MRP</label>
+                      <input type="number" class="form-control"  placeholder="Item MRP" name="Mrp" value="{{pro.Mrp}}" >
+                    </div>
+                     <div class="form-group">
+                      <label for="exampleTextarea1">Description</label>
+                      <textarea class="form-control" id="exampleTextarea1" rows="4" name="Description" placeholder="Description">{{pro.Description}}</textarea>
+                    </div>
+                    <div class="form-group">
+                      <label>Country of Origin</label>
+                      <input type="text" class="form-control"  placeholder="Country of Origin" name="Country" value="{{pro.Country}}" >
+                    </div>
+                    <div class="form-group">
+                      <label>Manufactured By</label>
+                      <input type="text" class="form-control"  placeholder="Manufactured By" name="Manufactured" value="{{pro.Manufactured}}" >
+                    </div>
+
+<!--                    <div class="form-group">-->
+<!--                      <label for="exampleInputEmail3">Email address</label>-->
+<!--                      <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                      <label for="exampleInputPassword4">Password</label>-->
+<!--                      <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                      <label for="exampleSelectGender">Gender</label>-->
+<!--                        <select class="form-control" id="exampleSelectGender">-->
+<!--                          <option>Male</option>-->
+<!--                          <option>Female</option>-->
+<!--                        </select>-->
+<!--                      </div>-->
+<!--                    <div class="form-group">-->
+<!--                      <label>File upload</label>-->
+<!--                      <input type="file" name="img[]" class="file-upload-default">-->
+<!--                      <div class="input-group col-xs-12">-->
+<!--                        <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload Image">-->
+<!--                        <span class="input-group-append">-->
+<!--                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>-->
+<!--                        </span>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                      <label for="exampleInputCity1">City</label>-->
+<!--                      <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">-->
+<!--                    </div>-->
+                    <div style="display:flex" >
+                      <div>
+
+                      <input type="file" class="file-upload-browse btn btn-primary" placeholder="Upload Image" name="Productimage1" style="background-color:lightblue;width:380px " >
+                      <img src="{{pro.Productimage1.url}}" height="70px" width="70px" >
+                    </div>
+                    <div>
+
+                      <input type="file" class="file-upload-browse btn btn-primary" placeholder="Upload Image" name="Productimage2" style="background-color:lightblue;width:380px" >
+                      <img src="{{pro.Productimage2.url}}" height="70px" width="70px" >
+                    </div>
+                    <div>
+
+                      <input type="file" class="file-upload-browse btn btn-primary" placeholder="Upload Image" name="Productimage3" style="background-color:lightblue;width:380px" >
+                      <img src="{{pro.Productimage3.url}}" height="70px" width="70px" >
+                    </div>
+                    </div><br>
+
+
+                    <div style="text-align:center" >
+                      <button type="submit"  class="btn btn-primary me-2" style="background-color:lightblue;width:205px"  >Submit</button>
+                      <a href="{% url 'index' %}" class="btn btn-light" style="border-color:lightblue" >Cancel</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+</form>
+
+</body>
+</html>
+{% endblock %}
